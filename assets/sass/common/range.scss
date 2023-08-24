@@ -1,0 +1,41 @@
+.range {
+  &-wrapper {
+    display: flex;
+  }
+
+  &-block {
+    margin-right: 10px;
+
+    i {
+      color: $additional;
+    }
+
+    &-green {
+      color: $green !important;
+    }
+
+    &-blue {
+      color: $blue !important;
+    }
+
+    &-yellow {
+      color: $yellow !important;
+    }
+
+    &-orange {
+      color: $orange !important;
+    }
+
+    &-pink {
+      color: $pink !important;
+    }
+
+    &-purple {
+      color: $purple !important;
+    }
+
+    &-prime {
+      color: $prime !important;
+    }
+  }
+}

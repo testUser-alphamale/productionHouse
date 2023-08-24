@@ -1,0 +1,21 @@
+.icons {
+  &-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main;
+    border-radius: $circle;
+
+    &-icon {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+}
+
+@media only screen and (max-width: $mobile) {
+}

@@ -1,0 +1,87 @@
+.color-block {
+  width: 100%;
+  padding: $title-gap 0;
+  transition: height 0.2s;
+}
+
+.green,
+.blue {
+  .color-block {
+    background: $green-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
+  }
+}
+
+.pink {
+  .color-block {
+    background: $pink-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
+  }
+}
+
+.yellow,
+.orange {
+  .color-block {
+    background: $orange-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
+  }
+}
+
+.purple,
+.prime {
+  .color-block {
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
+  }
+}
+
+.gray {
+  .color-block {
+    background-color: $default;
+  }
+}
+
+.default {
+  .color-block {
+    background-color: $default;
+  }
+}
+
+.main {
+  .color-block {
+    background-color: $main;
+  }
+}
+
+.additional {
+  .color-block {
+    background-color: $additional;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .color-block {
+    &-description {
+      font-size: 15px;
+    }
+  }
+}

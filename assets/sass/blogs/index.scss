@@ -1,0 +1,95 @@
+.blogs {
+  margin-top: 200px;
+
+  &-title {
+    padding-bottom: $content-gap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid $default;
+
+    h2 {
+      color: $main-text;
+    }
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-tag {
+        .nav-tag {
+          background-color: $main;
+          color: $main-text;
+        }
+
+        &-active {
+          .nav-tag {
+            background-color: rgba(75, 226, 200, 0.2);
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+
+  &-content {
+    h3 {
+      margin: $section-gap 0 $content-gap;
+    }
+
+    &-image {
+      width: 100%;
+      height: 300px;
+      margin: $content-gap 0;
+      background-color: $default;
+      border-radius: $radius;
+
+      img {
+        object-fit: cover;
+        border-radius: $radius;
+      }
+    }
+
+    &-profile {
+      margin-bottom: $content-gap;
+    }
+
+    &-link {
+      margin-top: $content-gap;
+
+      .button-blob-circle {
+        background-color: $default;
+      }
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+
+  &-circle {
+    width: 40px;
+    height: 40px;
+    background-color: $default;
+    border-radius: $circle;
+
+    img {
+      border-radius: $circle;
+      object-fit: cover;
+    }
+  }
+
+  &-title {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &-date {
+    color: $additional;
+    font-size: 14px;
+  }
+}

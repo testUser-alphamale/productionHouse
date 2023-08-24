@@ -1,0 +1,101 @@
+.home-clients {
+  position: relative;
+  z-index: 10;
+  background: $clients-background;
+  margin-left: auto;
+  margin-right: auto;
+  .text {
+    font-weight: 300;
+  }
+  &-top {
+    margin-bottom: 20px;
+  }
+  &-grid {
+    @extend .grid;
+  }
+  &-cat-title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #ddd;
+    margin: 1rem 0;
+  }
+  &-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    &-item {
+      width: calc(100% / 5 - 10px);
+      margin: 0 5px 10px;
+      height: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 106px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s all;
+      padding: 25px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      &:hover {
+        box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .home-clients {
+    &-list {
+      &-item {
+        width: calc(100% / 3 - 10px);
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-clients {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    &-grid {
+      width: 100%;
+    }
+    &-list {
+      &-item {
+        width: calc(50% - 7px);
+        margin-right: 0px;
+        height: 90px;
+        &:nth-child(5n) {
+          margin-right: 0px;
+        }
+        &:nth-child(4n) {
+          margin-right: 0px;
+        }
+        &:nth-child(even) {
+          margin-left: auto;
+        }
+        &:nth-child(3n) {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

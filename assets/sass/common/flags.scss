@@ -1,0 +1,111 @@
+.flags {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 50% 50%;
+
+  &-green {
+    &:hover {
+      background-color: $green;
+    }
+
+    &-active {
+      background-color: $green;
+
+      i {
+        color: $main !important;
+      }
+    }
+  }
+
+  &-blue {
+    &:hover {
+      background-color: $blue;
+    }
+
+    &-active {
+      background-color: $blue;
+
+      i {
+        color: $main !important;
+      }
+    }
+  }
+
+  &-yellow {
+    &:hover {
+      background-color: $yellow;
+    }
+
+    &-active {
+      background-color: $yellow;
+
+      i {
+        color: $main !important;
+      }
+    }
+  }
+
+  &-orange {
+    &:hover {
+      background-color: $orange;
+    }
+
+    &-active {
+      background-color: $orange;
+
+      i {
+        color: $main !important;
+      }
+    }
+  }
+
+  &-pink {
+    &:hover {
+      background-color: $pink;
+    }
+
+    &-active {
+      background-color: $pink;
+
+      i {
+        color: $main !important;
+      }
+    }
+  }
+
+  &-purple {
+    &:hover {
+      background-color: $purple;
+    }
+
+    &-active {
+      background-color: $purple;
+
+      i {
+        color: $main !important;
+      }
+    }
+  }
+
+  &-prime {
+    &:hover {
+      background-color: $prime;
+    }
+
+    &-active {
+      background-color: $prime;
+      i {
+        color: $main !important;
+      }
+    }
+  }
+
+  i {
+    font-size: 25px;
+    color: $main;
+  }
+}

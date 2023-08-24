@@ -1,0 +1,45 @@
+.client-section {
+  width: 100%;
+
+  &-wrapper {
+    margin: $section-gap auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-image-item {
+    width: 40%;
+
+    img {
+      border-radius: $radius;
+    }
+  }
+
+  &-content {
+    &-item {
+      width: 55%;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+}
+
+@media only screen and (max-width: $mobile) {
+  .client-section {
+    &-wrapper {
+      display: block;
+    }
+
+    &-image-item {
+      display: none;
+    }
+
+    &-content {
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.timeline {
+  &-wrapper {
+    margin-top: $title-gap;
+    position: relative;
+  }
+
+  &-vertical {
+    &-block {
+      i {
+        width: 10%;
+        color: $additional;
+        text-align: center;
+        position: absolute;
+        margin: 0 0 -1px 1px;
+        left: 45%;
+        bottom: 0;
+      }
+    }
+
+    &-line {
+      height: 100%;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      border-left: 2px solid $additional;
+      border-radius: 5px;
+    }
+  }
+
+  &-block {
+    position: relative;
+    padding: $content-gap 0;
+  }
+
+  &-item {
+    width: 100%;
+    margin: $section-gap auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-details {
+      width: 45%;
+      max-height: 70px;
+      padding: $content-gap;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      background-color: $main;
+      border-radius: $radius;
+      box-shadow: $shadow;
+      cursor: pointer;
+      transition: max-height 0.5s;
+
+      &:hover {
+        max-height: 500px;
+      }
+
+      .color-block-title,
+      .color-block-description {
+        color: $prime;
+      }
+    }
+
+    &-number {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $default;
+      border-radius: $circle;
+
+      .steps-item-number {
+        width: 35px;
+        height: 35px;
+        margin: 0 auto;
+      }
+    }
+
+    &-year- {
+      width: 45%;
+    }
+
+    &-year-reverse {
+      width: 45%;
+      display: flex;
+      justify-content: end;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+}
+
+@media only screen and (max-width: $mobile) {
+  .timeline-item {
+    flex-wrap: wrap;
+
+    &-details {
+      width: 100%;
+    }
+
+    &-number {
+      margin: $content-gap auto;
+    }
+
+    &-year- {
+      width: 100%;
+      text-align: center;
+      background-color: $main;
+    }
+
+    &-year-reverse {
+      width: 100%;
+      justify-content: center;
+      background-color: $main;
+    }
+  }
+}

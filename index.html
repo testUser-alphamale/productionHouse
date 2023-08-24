@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Page title -->
+    <title>Production House | Software</title>
+
+    <!-- Viewport meta tag for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link href="assets/images/common/productionHouseLogo-removebg-preview.png" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- AOS library for animating elements on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Viewport meta tag for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Lottie Player library for playing animations -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Font Awesome icon library -->
+    <script src="https://kit.fontawesome.com/db2c82a605.js" crossorigin="anonymous"></script>
+
+    <!-- Custom stylesheet for the page -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <!-- Jarallax library for parallax scrolling effect -->
+    <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <!-- Importing the jarallax library -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed" data-aos="fade-down">
+        <!-- Navbar content -->
+        <div class="navbar-flex">
+            <!-- Mobile navigation toggle button -->
+            <button class="navbar-mobile-toggle"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            <!-- Root link for the logo -->
+            <a href="/#" class="navbar-root-link">
+                <figure class="navbar-logo img"><img src="assets/images/common/productionHouseLogo-removebg-preview.png" /></figure>
+            </a>
+            <!-- Mobile navigation overlay -->
+            <section class="navbar-mobile-overlay"></section>
+            <!-- Navbar list -->
+            <div class="navbar-list">
+                <ul class="navbar-navigation flex-start">
+                    <!-- Indicator for current navigation item -->
+                    <aside class="navbar-navigation-indicator"></aside>
+                    <!-- Navigation links -->
+                    <li class="navbar-navigation-link"><a href="/#about">About</a></li>
+                    <li class="navbar-navigation-link"><a href="#services">Services</a></li>
+                    <li class="navbar-navigation-link"><a href="/#clients">Clients</a></li>
+                    <!-- <li class="navbar-navigation-link"><a href="/#team">Team</a></li> -->
+                    <!-- <li class="navbar-navigation-link"><a href="#">Blogs</a></li> -->
+                    <!-- <li class="navbar-navigation-link"><a href="#">Careers</a></li> -->
+                    <!-- Contact link for mobile devices -->
+                    <li class="navbar-navigation-link navbar-mobile-contact">
+                        <button type="button" class="contact-link">
+                            <p><a href="#contact" rel="noopener">contact us</a></p>
+                        </button>
+                    </li>
+                </ul>
+                <!-- Contact link for desktop devices -->
+                <span class="navbar-desktop-contact">
+                    <button type="button" class="contact-link">
+                        <p><a href="#contact" rel="noopener">contact us</a></p>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="app-wrapper">
+        <!-- Home section -->
+        <div class="home" data-aos="fade-up">
+            <div class="home-header">
+                <div class="home-header-background">
+                    <!-- Orange blobs animation -->
+                    <!-- <div class="orange-blobs">
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_5gdcuanx.json"
+                            background="transparent" style="width:100%;height:100%" speed="1" loop="true"
+                            autoplay="true"></lottie-player>
+                    </div> -->
+                    <!-- Green blobs animation -->
+                    <div class="green-blobs">
+                        <lottie-player src="https://lottie.host/2a4cd7fd-ef68-4865-b56c-8fe21f2c9170/7RneaIKFUy.json"
+                            background="transparent" style="width:100%;height:100%" speed="1" loop="true"
+                            autoplay="true"></lottie-player>
+                    </div>
+                </div>
+
+                <div class="home-header-main">
+                    <div>
+                        <div class="home-header-main-content">
+                            <div>
+                                <h1 data-aos="fade-up" data-aos-delay="100">Production House</h1>
+                                <h1 data-aos="fade-up" data-aos-delay="250">.tech</h1>
+                            </div>
+                            <p data-aos="fade-up" data-aos-delay="250" style="color: rgb(74, 255, 3); font-size:28px; border: 1px solid grey; padding: 25px; border-radius: 2%; box-shadow: 10px 10px rgb(255, 2, 2); font-family:monospace;">
+                            “ Where business requirements meet technology ”.</p>
+                        </div><button type="button" class="contact-link">
+                            <p><a href="#services" rel="noopener">Let’s get started!</a><!-- /services --></p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="home-services section">
+                <div class="w-container">
+                    <aside class="indicator" id="services"></aside>
+                    <h3 class="section-title">Services</h3>
+                    <div class="home-services-header">
+                        <h3 class="home-services-title" data-aos="fade-up" style="color: brown; font-size: 20px;">.tech shows we belong to technology</h3>
+                        <div data-aos="fade-up" data-aos-delay="100">
+                            <p>We recognize the dynamic nature of the business landscape and the importance of having a flexible partner who can
+                                adapt and grow alongside it. Our commitment lies in taking full responsibility for your business requirements and
+                                aiming to deliver unparalleled service and excellence.</p></div>
+                    </div>
+                    <div class="home-services-list flex-between" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="page-common-block services-content">
+                            <div class="services-content-wrapper" data-aos-anchor-placement="top" data-aos="zoom-in">
+                                <div class="grey-box">
+                                    <div class="grey-box-image">
+                                        <div class="grey-box-image-bg"><img
+                                                src="/assets/images/common/service-circle.png" alt="grey-box-image" />
+                                        </div>
+                                        <div class="grey-box-image-icon"><img src="/assets/images/services/web.png"
+                                                alt="grey-box-image" /></div>
+                                    </div>
+                                    <h4>Web Development</h4>
+                                    <p class="grey-box-description">We provide a full range of services to create
+                                        best-in-class software solutions based on your needs.</p>
+                                    <div class="grey-box-wrapper">
+                                        <div class="button-blob">
+                                            <a href="#contact">
+                                                <div class="button-blob-circle"></div>
+                                                <p>Contact<i class="fa-solid fa-chevron-right"></i></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-content-wrapper" data-aos-anchor-placement="top" data-aos="zoom-in">
+                                <div class="grey-box">
+                                    <div class="grey-box-image">
+                                        <div class="grey-box-image-bg"><img
+                                                src="/assets/images/common/service-circle.png" alt="grey-box-image" />
+                                        </div>
+                                        <div class="grey-box-image-icon"><img src="/assets/images/services/devops.png"
+                                                alt="grey-box-image" /></div>
+                                    </div>
+                                    <h4>Digital Marketing</h4>
+                                    <p class="grey-box-description">Boost your online presence and maximize your ROI with our professional digital marketing experts.</p>
+                                    <div class="grey-box-wrapper">
+                                        <div class="button-blob">
+                                            <a href="#contact">
+                                                <div class="button-blob-circle"></div>
+                                                <p>Contact<i class="fa-solid fa-chevron-right"></i></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-content-wrapper" data-aos-anchor-placement="top" data-aos="zoom-in">
+                                <div class="grey-box">
+                                    <div class="grey-box-image">
+                                        <div class="grey-box-image-bg"><img
+                                                src="/assets/images/common/service-circle.png" alt="grey-box-image" />
+                                        </div>
+                                        <div class="grey-box-image-icon"><img src="/assets/images/services/mobile.png"
+                                                alt="grey-box-image" /></div>
+                                    </div>
+                                    <h4>App Development</h4>
+                                    <p class="grey-box-description">Boost your mobile application development with our
+                                        in-house team of experts.</p>
+                                    <div class="grey-box-wrapper">
+                                        <div class="button-blob">
+                                            <a href="#contact">
+                                                <div class="button-blob-circle"></div>
+                                                <p>Contact<i class="fa-solid fa-chevron-right"></i></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-content-wrapper" data-aos-anchor-placement="top" data-aos="zoom-in">
+                                <div class="grey-box">
+                                    <div class="grey-box-image">
+                                        <div class="grey-box-image-bg"><img
+                                                src="/assets/images/common/service-circle.png" alt="grey-box-image" />
+                                        </div>
+                                        <div class="grey-box-image-icon"><img src="/assets/images/services/qa.png"
+                                                alt="grey-box-image" /></div>
+                                    </div>
+                                    <h4>API Integration</h4>
+                                    <p class="grey-box-description">Integrate your systems seamlessly with our professional API integration team, ensuring efficient communication and data exchange between your software and third-party applications.</p>
+                                    <div class="grey-box-wrapper">
+                                        <div class="button-blob">
+                                            <a href="#contact">
+                                                <div class="button-blob-circle"></div>
+                                                <p>Contact<i class="fa-solid fa-chevron-right"></i></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-clients section">
+                <div class="w-container">
+                    <div class="section-header" data-aos="fade-up">
+                        <h3 class="section-title">clients</h3>
+                        <section class="section-body">
+                            <h3 id="join-our-family" class='title-h3'>Join our family</h3>
+                            <p>Join the world best companies and startups as our clients</p>
+                        </section>
+                    </div>
+                    <aside class="indicator" id="clients"></aside>
+                    <div class="home-clients-grid">
+                        <ul class="home-clients-list">
+                            <!-- <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/google.png" alt="client images" /></li>
+                            <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/walmart.png" alt="client images" /></li>
+                            <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/qualcomm.png" alt="client images" /></li> -->
+                            <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/cognyte.png" alt="client images" /></li>
+                            <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/varonis.png" alt="client images" /></li>
+                            <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/ownbackup.png" alt="client images" /></li>
+                            <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/audiocodes.png" alt="client images" /></li>
+                            <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/ai21.png" alt="client images" /></li>
+                            <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/oneZero.png" alt="client images" /></li>
+                            <li data-aos="fade-up" class="home-clients-list-item"><img
+                                    src="assets/images/home/clients/applied.png" alt="client images" /></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="page-common-block home-clients-btn"><button class="link"><a href="#">See all our
+                                clients</a></button></div> -->
+                </div>
+            </div>
+            <div class="home-about section">
+                <div class="w-container">
+                    <div class="section-header" data-aos="fade-up">
+                        <h3 class="section-title">about</h3>
+                        <section class="section-body">
+                            <h3 id="we-are-gotech" class='title-h3'>We Are Production House</h3>
+                            <p>Helping you from the requirements and design stage and all the way through building the
+                                infrastructure and architecture, development and QA to full integration within your
+                                organization.</p>
+                            <p>Our commitment to customer satisfaction is evident in our vast range of services, and our
+                                ability to customize solutions based on your individual needs. Our experts are former
+                                8200 and Mamram graduates dedicated to staying
+                                ahead of the curve and providing you with the solutions that you need to stay
+                                competitive in today&#39;s ever-changing world.</p>
+                        </section>
+                    </div>
+                    <aside class="indicator" id="about"></aside>
+                    <div class="home-about-images images-flex">
+                        <div class="images-flex-1 images-flex-section" data-aos="fade-up">
+                            <figure class=" img"><img src="assets/images/home/about/office1.jpg" /></figure>
+                            <figure class=" img"><img src="assets/images/home/about/office2.jpg" /></figure>
+                        </div>
+                        <div class="images-flex-2 images-flex-section" data-aos="fade-up">
+                            <figure class=" img"><img src="assets/images/home/about/office3.jpg" /></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-join">
+                <div class="home-join-flex">
+                    <div class="home-join-animation" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <lottie-player src="assets/animations/join.json" background="transparent" speed="1" loop="true"
+                            class=" animation" autoplay="true"></lottie-player>
+                    </div>
+                    <div class="home-join-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <h3 id="join-our-community" class='title-h3'>Join our community</h3>
+                        <p>Be the first to know the latest news and technologies updates</p>
+                        <div class="socials"><a href="#" target="_self" class="socials-link"><i
+                                    class="fa-brands fa-square-facebook"></i></a><a href="#" target="_self"
+                                class="socials-link"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" target="_self" class="socials-link"><i
+                                    class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="home-team section">
+                <div class="w-container">
+                    <div class="section-header" data-aos="fade-up">
+                        <h5 class="section-title">team</h5>
+                        <section class="section-body">
+                            <h3 id="meet-our-professional-team" class='title-h3'>Meet our professional team</h3>
+                        </section>
+                    </div>
+                    <aside class="indicator" id="team"></aside>
+                    <div class="home-team-list">
+                        <div class="home-team-member" data-aos="fade-up" data-aos-duration="1000">
+                            <figure class=" img"><img src="assets/images/home/team/lidor.jpg" /></figure>
+                            <div class="home-team-member-content" data-aos="fade-up" data-aos-delay="150">
+                                <div class="home-team-member-content-header">
+                                    <h6>Lidor Itzhari</h6><a href="https://www.linkedin.com/in/lidoritzhari/"
+                                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                        <div class="home-team-member" data-aos="fade-up" data-aos-duration="1000">
+                            <figure class=" img"><img src="assets/images/home/team/doron.jpg" /></figure>
+                            <div class="home-team-member-content" data-aos="fade-up" data-aos-delay="150">
+                                <div class="home-team-member-content-header">
+                                    <h6>Doron Feldman</h6><a href="https://www.linkedin.com/in/doron-feldman/"
+                                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                                <p>CTO</p>
+                            </div>
+                        </div>
+                        <div class="home-team-member" data-aos="fade-up" data-aos-duration="1000">
+                            <figure class=" img"><img src="assets/images/home/team/ronen.jpg" /></figure>
+                            <div class="home-team-member-content" data-aos="fade-up" data-aos-delay="150">
+                                <div class="home-team-member-content-header">
+                                    <h6>Ronen Klein</h6><a href="https://www.linkedin.com/in/kleinronen/"
+                                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                                <p>VP Sales &amp; Business Development</p>
+                            </div>
+                        </div>
+                        <div class="home-team-member" data-aos="fade-up" data-aos-duration="1000">
+                            <figure class=" img"><img src="assets/images/home/team/mor.jpg" /></figure>
+                            <div class="home-team-member-content" data-aos="fade-up" data-aos-delay="150">
+                                <div class="home-team-member-content-header">
+                                    <h6>Mor Armoni</h6><a href="https://www.linkedin.com/in/morarmoni/"
+                                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                                <p>HR Manager</p>
+                            </div>
+                        </div>
+                        <div class="home-team-member" data-aos="fade-up" data-aos-duration="1000">
+                            <figure class=" img"><img src="assets/images/home/team/assaf.jpg" /></figure>
+                            <div class="home-team-member-content" data-aos="fade-up" data-aos-delay="150">
+                                <div class="home-team-member-content-header">
+                                    <h6>Assaf Balzamovich</h6><a href="https://www.linkedin.com/in/assaf-balzamovich/"
+                                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                                <p>Head of QA Automation</p>
+                            </div>
+                        </div>
+                        <div class="home-team-member" data-aos="fade-up" data-aos-duration="1000">
+                            <figure class=" img"><img src="assets/images/home/team/giora.jpg" /></figure>
+                            <div class="home-team-member-content" data-aos="fade-up" data-aos-delay="150">
+                                <div class="home-team-member-content-header">
+                                    <h6>Giora Krasilshchik</h6><a
+                                        href="https://www.linkedin.com/in/giora-krasilshchik-47ab8219/"
+                                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                                <p>Head of Mobile</p>
+                            </div>
+                        </div>
+                        <div class="home-team-member" data-aos="fade-up" data-aos-duration="1000">
+                            <figure class=" img"><img src="assets/images/home/team/raz.jpg" /></figure>
+                            <div class="home-team-member-content" data-aos="fade-up" data-aos-delay="150">
+                                <div class="home-team-member-content-header">
+                                    <h6>Raz Mantzur</h6><a href="https://www.linkedin.com/in/raz-mantzur/"
+                                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                                <p>Head of Web</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="page-common-sub-section">
+                <div class="contact flex-between">
+                    <aside class="indicator" id="contact"></aside>
+                    <div class="contact-bg"></div>
+                    <div class="contact-flex">
+                        <div class="contact-left">
+                            <div class="contact-info">
+                                <h3>Get in touch</h3>
+                                <div class="contact-info-block">
+                                    <h4>Have any questions?</h4>
+                                    <p><a href="#">contact@therehandev.com</a></p>
+                                </div>
+                                <div class="contact-info-block">
+                                    <h4>Book a <strong>FREE</strong> 1-1 session</h4>
+                                    <p>Schedule a complimentary individual consultation with us today.</p>
+                                </div>
+                            </div>
+                            <!-- Map Wrapper -->
+                            <div class="map-wrapper">
+                                <!-- Embedded Google Map -->
+                                <!-- <iframe class="map" loading="lazy"
+                                    src="https://www.google.com/maps?q=5 Ha-Melakha, Netanya&amp;output=embed">
+                                </iframe>-->
+                            </div>
+                        </div> 
+                        
+                        <!-- ---------------------------starts here--------------------- -->
+                        <form id="contact-form" class="contact-form form" data-aos-anchor-placement="top-center" data-aos="zoom-in">
+                            <div class="form-flex">
+                              <div class="input-container">
+                                <label for="firstName">First name<span>*</span></label>
+                                <input data-required="true" type="text" name="firstName" placeholder="First name" class="input" />
+                                <p class="firstName-error input-error">Required field</p>
+                              </div>
+                              <div class="input-container">
+                                <label for="lastName">Last name<span>*</span></label>
+                                <input data-required="true" type="text" name="lastName" placeholder="Last name" class="input" />
+                                <p class="lastName-error input-error">Required field</p>
+                              </div>
+                              <div class="input-container">
+                                <label for="email">Email address<span>*</span></label>
+                                <input data-required="true" type="email" name="email" placeholder="Enter your email" data-validation="email" class="input" />
+                                <p class="email-error input-error">Please insert a valid email</p>
+                              </div>
+                              <div class="input-container">
+                                <label for="message">How can we help?</label>
+                                <textarea data-required="true" name="message" placeholder="Enter message" class="input textarea"></textarea>
+                                <p class="message-error input-error">Required field</p>
+                              </div>
+                            </div>
+                            <section class="form-submit">
+                              <input type="submit" class="submit" value="send message" onclick="send()" />
+                              <div class="loader">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                              </div>
+                              <p class="success">Thank you! Your message has been sent.</p>
+                              </section>
+                          </form>
+                          
+                          <script>
+                            // Intercept form submission
+                            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                              event.preventDefault(); // Prevent default form submission
+                              
+                              // Collect form data
+                              var formData = new FormData(this);
+                          
+                              // Send form data using AJAX
+                              var xhr = new XMLHttpRequest();
+                              xhr.open('POST', 'https://formsubmit.co/043d3cd01f9762f6a1a8c3b516c1b4c2');
+                              xhr.setRequestHeader('Accept', 'application/json');
+                              xhr.onreadystatechange = function() {
+                                if (xhr.readyState === XMLHttpRequest.DONE) {
+                                  var response = JSON.parse(xhr.responseText);
+                                  if (response.success) {
+                                    // Success message
+                                    document.querySelector('.success').style.display = 'block';
+                                    alert("Form Submitted")
+                                    // Reset the form fields
+                                    document.getElementById('contact-form').reset();
+                                  } else {
+                                    // Error message
+                                    document.querySelector('.error').style.display = 'block';
+                                  }
+                                  // Hide the loader
+                                  document.querySelector('.loader').style.display = 'none';
+                                }   
+                              };
+                              xhr.send(formData);
+                          
+                              // Show the loader
+                              document.querySelector('.loader').style.display = 'block';
+                            });
+                          </script>
+                          
+                        <!-- -----------------------------------end here------------------------ -->
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- Load the JavaScript file for the home page functionality -->
+            <script type="module" src="assets/js/home/index.js"></script>
+        </div>
+    </div>
+    <div>
+        <div class="footer">
+            <div class="w-container">
+                <div class="page-common-block">
+                    <div class="footer-list">
+                        <div>
+                            <h6>Company</h6>
+                            <div class="list-items">
+                                <div class="text-small"><a href="/#about" class="list-items-link">About Us</a></div>
+                                <div class="text-small"><a href="/#services" class="list-items-link">Services</a></div>
+                                <div class="text-small"><a href="/#clients" class="list-items-link">Clients</a></div>
+                                <div class="text-small"><a href="/#team" class="list-items-link">Blogs</a></div>
+                                <!-- <div class="text-small"><a href="#" class="list-items-link">Cases</a></div>
+                                <div class="text-small"><a href="#" class="list-items-link">Careers</a></div> -->
+                            </div>
+                        </div>
+                        <div>
+                            <h6>Services</h6>
+                            <div class="list-items">
+                                <div class="text-small"><a href="#" class="list-items-link">Web
+                                        Development</a></div>
+                                <div class="text-small"><a href="#" class="list-items-link">App
+                                        Development</a></div>
+                                <div class="text-small"><a href="#" class="list-items-link">Digital Marketing</a>
+                                </div>
+                                <div class="text-small"><a href="#" class="list-items-link">API Integration</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h6>Case Studies</h6>
+                            <div class="list-items">
+                                <div class="text-small"><a href="#" class="list-items-link">Application Development</a>
+                                </div>
+                                <div class="text-small"><a href="#" class="list-items-link">iOS &amp; Android
+                                        Development</a></div>
+                                <div class="text-small"><a href="#" class="list-items-link">QA
+                                        Automation Tests</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h6>Join Us</h6>
+                            <div class="list-items">
+                                <div class="text-small">
+                                    <div>
+                                        <div class="socials"><a href="#" target="_self" class="socials-link"><i
+                                                    class="fa-brands fa-square-facebook"></i></a><a href="#"
+                                                target="_self" class="socials-link"><i
+                                                    class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#" target="_self" class="socials-link"><i
+                                                    class="fa-brands fa-square-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-small">
+                                    <div>
+                                        <div class="text-small">contact@therehandev.com</div>
+                                    </div>
+                                </div>
+                                <div class="text-small">
+                                    <div>
+                                        <div class="text-small">5 Ha-Melakha St., Netanya</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom flex-between">
+                    <div class="page-common-block">
+                        <section class="footer-bottom-section flex-between">
+                            <div class="footer-bottom-section-policy">© Copyright productionHouse.tech. All rights reserved.
+                            </div>
+                            <div class="footer-bottom-section-policy"><a href="#">Privacy Policy</a><a href="#">Terms of
+                                    Service</a></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

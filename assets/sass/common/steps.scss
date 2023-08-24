@@ -1,0 +1,42 @@
+.steps {
+  margin-top: $section-gap;
+
+  &-item {
+    margin: $content-gap 0;
+    display: flex;
+    align-items: center;
+
+    &-number {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $main;
+      border-radius: $circle;
+    }
+
+    p {
+      width: 90%;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .steps-item {
+    flex-wrap: wrap;
+
+    &-number {
+      margin: 10px auto;
+    }
+
+    p {
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}

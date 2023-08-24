@@ -1,0 +1,35 @@
+.posts {
+  .blogs-content-link {
+    display: none;
+  }
+
+  &-description-blog {
+    p {
+      margin-bottom: $content-gap;
+    }
+
+    &-comment {
+      margin: 40px 0;
+      padding: $section-gap;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      border: 2px solid $default;
+      border-radius: $radius;
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 3px;
+      }
+
+      &-image {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
+  }
+}

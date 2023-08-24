@@ -1,0 +1,32 @@
+.faq {
+  &-wrapper {
+    &-item {
+      max-height: 70px;
+      margin: $content-gap 0;
+      padding: 0 $content-gap;
+      overflow: hidden;
+      background-color: $main;
+      border-radius: $radius;
+      box-shadow: $shadow;
+      transition: max-height 1s;
+      cursor: pointer;
+
+      &:hover {
+        max-height: 1000px;
+      }
+
+      &-answer {
+        margin: 0 0 $content-gap;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .faq {
+    &-wrapper-item {
+      max-height: 100%;
+    }
+  }
+}

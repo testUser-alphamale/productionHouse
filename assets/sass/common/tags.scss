@@ -1,0 +1,36 @@
+.tags {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-item {
+    height: 40px;
+    margin: 0 10px 10px 0;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    background-color: $main;
+    color: $additional;
+    border-radius: 10px;
+
+    p {
+      color: $additional;
+      font-size: $small;
+    }
+
+    &-icon {
+      p {
+        margin-left: 10px;
+      }
+    }
+
+    &-image {
+      width: 20px;
+      height: 20px;
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.video {
+  width: 100%;
+  height: 500px;
+  margin-top: $title-gap;
+  background-color: $default;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: $radius;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .video {
+    height: 200px;
+  }
+}

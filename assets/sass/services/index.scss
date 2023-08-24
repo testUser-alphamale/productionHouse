@@ -1,0 +1,90 @@
+.services {
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    &-wrapper {
+      width: 49%;
+      margin: 10px 0;
+
+      .grey-box {
+        &:hover {
+          background: linear-gradient(
+            90deg,
+            rgba(75, 226, 200, 0.4),
+            rgba(42, 200, 232, 0.4)
+          );
+        }
+      }
+    }
+  }
+
+  &-technology {
+    width: 100%;
+    padding: $inner-gap 0;
+    text-align: center;
+
+    &-wrapper {
+      width: 100%;
+      margin: $content-gap 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &-block {
+      margin: $section-gap 0;
+      padding: $content-gap;
+      position: relative;
+      text-align: center;
+      background-color: $main;
+      border-radius: $radius;
+      box-shadow: $shadow;
+    }
+  }
+}
+
+.service {
+  &-page {
+    .case-studies-wrapper {
+      margin-top: $section-gap;
+    }
+  }
+
+  .color-block {
+    &-title,
+    &-description {
+      text-align: center;
+    }
+  }
+
+  &-wrapper {
+    width: 100%;
+    margin-top: $section-gap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .services-content-item-info h6 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .services {
+    &-content {
+      padding: 0;
+    }
+
+    &-content-wrapper {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

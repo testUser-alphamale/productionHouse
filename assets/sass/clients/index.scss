@@ -1,0 +1,131 @@
+.clients {
+  position: relative;
+
+  &-categories-wrapper {
+    .section-alpha {
+      .color-block {
+        padding-bottom: 0;
+      }
+    }
+
+    .section-beta {
+      margin-bottom: $title-gap;
+      .color-block {
+        padding: 0;
+      }
+    }
+  }
+
+  &-flags-wrapper {
+    width: 100%;
+    margin: -$title-gap auto $title-gap;
+    display: flex;
+    justify-content: center;
+
+    .flags {
+      width: 100px;
+      height: 100px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+
+      i {
+        font-size: 40px;
+        color: $additional;
+        transition: color 0.3s;
+      }
+
+      &:hover {
+        i {
+          color: $main;
+        }
+      }
+    }
+  }
+
+  &-list-wrapper {
+    margin: $section-gap auto;
+    display: flex;
+    flex-direction: column;
+
+    .home-clients-list {
+      &-item {
+        width: calc(100% / 6 - 10px);
+        margin: 0 5px 10px;
+        background-color: $default;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .clients {
+    &-list-wrapper {
+      .home-clients-list {
+        &-item {
+          width: calc(100% / 5 - 10px);
+          margin: 0 5px 10px;
+        }
+      }
+    }
+
+    .gray .color-block {
+      height: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .clients {
+    .gray .color-block {
+      height: 100%;
+      margin-bottom: 0;
+    }
+
+    &-categories-wrapper {
+      .section-beta {
+        margin: $section-gap 0;
+      }
+    }
+
+    &-flags-wrapper {
+      width: 90%;
+      margin: -100px auto;
+      justify-content: space-between;
+
+      .flags {
+        width: 40px;
+        height: 40px;
+
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-list-wrapper {
+      display: block;
+
+      .home-clients-list {
+        margin: 20px auto;
+
+        &-item {
+          width: calc(100% / 3 - 10px);
+          margin: 0 5px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-small) {
+  .clients {
+    &-list-wrapper {
+      .home-clients-list {
+        &-item {
+          width: calc(100% / 2 - 10px);
+          margin: 0 5px 10px;
+        }
+      }
+    }
+  }
+}

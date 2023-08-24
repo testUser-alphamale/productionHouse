@@ -1,0 +1,149 @@
+.form {
+  position: relative;
+
+  &-submit {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    .success {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      transition: 0.2s all;
+      opacity: 0;
+      pointer-events: none;
+      &-active {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+    .loader {
+      top: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+    .submit {
+      border: 2px solid black;
+      cursor: pointer;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.75rem;
+      background: transparent;
+      transition: 0.2s all;
+      border-radius: 50px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-flex {
+    display: flex;
+    flex-wrap: wrap;
+    .input-container {
+      width: 100%;
+      margin-bottom: 20px;
+      position: relative;
+      .input-error {
+        position: absolute;
+        font-size: 0.75rem;
+        top: calc(100% + 5px);
+        color: red;
+        left: 4px;
+        opacity: 0;
+        transition: 0.2s all;
+        &-active {
+          opacity: 1;
+        }
+      }
+      label {
+        font-size: 0.813rem;
+        padding-left: 5px;
+        color: #070f1a;
+        padding-top: 5px;
+      }
+      .input {
+        margin-top: 5px;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #f2f4f8;
+        height: 50px;
+        font-size: 16px;
+        text-indent: 10px;
+        transition: 0.2s all;
+
+        &:focus {
+          border: 2px solid #002e63;
+        }
+        &::placeholder {
+          opacity: 0.6;
+        }
+      }
+      .textarea {
+        height: 150px;
+        resize: none;
+        padding-top: 10px;
+      }
+    }
+    .upload-container {
+      &-flex {
+        display: flex;
+        align-items: center;
+        label {
+          padding-top: 0px;
+        }
+      }
+      &-trigger {
+        display: flex;
+        .img {
+          width: 12px;
+          height: 12px;
+          align-items: center;
+          margin-right: 3px;
+          margin-bottom: 4px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      &-file {
+        font-size: 14px;
+        &-name {
+          display: none;
+          align-items: center;
+          &-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+          }
+        }
+        &-clear {
+          width: 14px;
+          height: 14px;
+          margin-left: 8px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      label {
+        width: 180px;
+      }
+      .input {
+        display: none;
+        margin-top: 0px;
+        border: none;
+        height: fit-content;
+      }
+    }
+  }
+}

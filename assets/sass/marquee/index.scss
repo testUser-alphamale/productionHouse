@@ -1,0 +1,36 @@
+.marquee-wrapper {
+  background: $default;
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  gap: var(--gap);
+
+  &-group {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: marquee 200s linear infinite;
+
+    .marquee-item {
+      margin: $content-gap;
+    }
+
+    img {
+      width: 100px;
+      max-height: 50px;
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
